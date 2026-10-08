@@ -21,7 +21,7 @@
 
   <header class="sticky top-0 z-10 border-b border-line bg-bg/90 backdrop-blur">
     <div class="wrap">
-      <nav class="flex h-16 items-center justify-between font-normal">
+      <nav class="flex h-16 items-center justify-end font-normal">
         <ul class="flex gap-4 md:gap-7">
           <li><a class="text-mute no-underline hover:text-blue" href="#work">ผลงาน</a></li>
           <li><a class="text-mute no-underline hover:text-blue" href="#skills">ทักษะ</a></li>
@@ -89,25 +89,30 @@
             class="group/s grid cursor-pointer list-none grid-cols-[1fr_24px] items-center gap-4 py-6 after:font-display after:text-[1.6rem] after:text-blue after:transition-transform after:content-['+'] group-open/d:after:rotate-45 md:grid-cols-[1fr_230px_70px_24px] [&::-webkit-details-marker]:hidden">
             <h3
               class="text-[clamp(1.3rem,3vw,2rem)] font-bold transition group-hover/s:translate-x-2.5 group-hover/s:text-blue">
-              Orbit Coffee</h3>
+              Easy Pencil</h3>
             <span class="hidden text-[.95rem] text-mute md:block">เว็บแอป · โปรเจกต์ส่วนตัว</span>
             <span class="hidden text-[.95rem] text-mute md:block">2026</span>
           </summary>
           <div class="grid gap-8 pb-10 pt-1 md:grid-cols-[1.1fr_1fr] md:gap-9">
             <div>
-              <p class="mb-4 text-mute">เว็บสั่งเครื่องดื่มและสะสมแต้มสำหรับร้านกาแฟ มีระบบสมาชิก ตะกร้าสินค้า
-                และหน้าแดชบอร์ดให้เจ้าของร้านดูออเดอร์ [แก้คำอธิบายเป็นของจริง]</p>
+              <p class="mb-4 text-mute">Lightweight 2D pencil drawing tool built with Java, LWJGL, and OpenGL
+                <br>โปรแกรมวาดบนจอคอมพิวเตอร์ เครื่องมือผู้ช่วยสำหรับการวาดเส้น เขียนข้อความ พิมพ์
+                แก้ไข เปลี่ยนสีและลบได้
+                เหมาะสำหรับอาจารย์หรือคุณครูที่ต้องการหาเครื่องมือประกอบการสอนเพื่อประสิทธิภาพการสอนที่ดีมากยิ่งขึ้น
+                ตัวโปรแกรมมีรูปแบบการใช้ที่ง่ายและสะดวกสบาย
+              </p>
               <ul class="flex flex-wrap gap-2">
-                <li class="chip">React</li>
-                <li class="chip">Node.js</li>
-                <li class="chip">PostgreSQL</li>
+                <li class="chip">Java</li>
+
               </ul>
-              <a class="link mt-[18px] inline-block font-medium text-blue" href="#">ดูโค้ดบน GitHub</a>
+              <a class="link mt-[18px] inline-block font-medium text-blue"
+                href="https://github.com/ProjectGradle/EasyPencil">ดูโค้ดบน GitHub</a>
             </div>
             <div
-              class="grid aspect-[16/10] grid-rows-[14px_1fr] gap-2.5 rounded-[14px] border border-line bg-card p-3.5 transition-transform duration-500 hover:rotate-[1.5deg] hover:scale-[1.03] group-open/d:animate-pop">
+              class="grid aspect-[16/10] grid-rows-[14px_1fr] gap-2.5 overflow-hidden rounded-[14px] border border-line bg-card p-3.5 transition-transform duration-500 hover:rotate-[1.5deg] hover:scale-[1.03] group-open/d:animate-pop">
               <i class="block h-2 w-[60px] rounded-full bg-line"></i>
-              <div class="rounded-lg bg-gradient-to-br from-[#2f4bff] to-[#8a9bff]"></div>
+              <img src="docs/Image/logo_board.png" alt="หน้าจอของเว็บ Orbit Coffee" loading="lazy"
+                class="h-full min-h-0 w-full rounded-lg object-cover object-top">
             </div>
           </div>
         </details>
@@ -172,12 +177,13 @@
               class="text-[clamp(1.3rem,3vw,2rem)] font-bold transition group-hover/s:translate-x-2.5 group-hover/s:text-blue">
               WebCoinGame</h3>
             <span class="hidden text-[.95rem] text-mute md:block">เว็บแอป · โปรเจกต์รายวิชา</span>
-            <span class="hidden text-[.95rem] text-mute md:block">2024</span>
+            <span class="hidden text-[.95rem] text-mute md:block">2025</span>
           </summary>
           <div class="grid gap-8 pb-10 pt-1 md:grid-cols-[1.1fr_1fr] md:gap-9">
             <div>
-              <p class="mb-4 text-mute">ระบบจัดการข้อมูลนักศึกษาและตารางเรียน ทำงานเป็นทีม 4 คน
-                รับผิดชอบฝั่งฐานข้อมูลและหน้าจอ [แก้คำอธิบายเป็นของจริง]</p>
+              <p class="mb-4 text-mute">ร้านขายเกมออนไลน์ (Game Shop) แบบ Single Page Application Online game store SPA
+                built with Angular. ทำงานเป็นทีม 2 คน
+              </p>
               <ul class="flex flex-wrap gap-2">
                 <li class="chip">Angular</li>
                 <li class="chip">Firebase</li>
@@ -187,9 +193,10 @@
                 href="https://github.com/chaiwanLP/WebCoinGame">ดูโค้ดบน GitHub</a>
             </div>
             <div
-              class="grid aspect-[16/10] grid-rows-[14px_1fr] gap-2.5 rounded-[14px] border border-line bg-card p-3.5 transition-transform duration-500 hover:rotate-[1.5deg] hover:scale-[1.03] group-open/d:animate-pop">
+              class="grid aspect-[16/10] grid-rows-[14px_1fr] gap-2.5 overflow-hidden rounded-[14px] border border-line bg-card p-3.5 transition-transform duration-500 hover:rotate-[1.5deg] hover:scale-[1.03] group-open/d:animate-pop">
               <i class="block h-2 w-[60px] rounded-full bg-line"></i>
-              <div class="rounded-lg bg-gradient-to-br from-[#13151a] to-[#586074]"></div>
+              <img src="docs/Image/WebcoinGame.png" alt="CoinGame" loading="lazy"
+                class="h-full min-h-0 w-full rounded-lg object-cover object-top">
             </div>
           </div>
         </details>
@@ -212,6 +219,7 @@
               <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">TypeScript</li>
               <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">React</li>
               <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Angular</li>
+              <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Flutter</li>
             </ul>
           </div>
           <div class="rv rounded-2xl border border-line bg-card p-6 transition-colors hover:border-blue"
@@ -223,6 +231,8 @@
               <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Express.js</li>
               <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">PHP</li>
               <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Python</li>
+              <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Java</li>
+              <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Dart</li>
             </ul>
           </div>
           <div class="rv rounded-2xl border border-line bg-card p-6 transition-colors hover:border-blue"
@@ -230,7 +240,7 @@
             <h3 class="text-xl font-bold">Mobile</h3>
             <small class="mb-4 block text-mute">แอปมือถือ</small>
             <ul class="flex flex-wrap gap-2">
-              <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Flutter (Dart)</li>
+              <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Flutter</li>
               <li class="chip transition hover:-translate-y-0.5 hover:bg-blue hover:text-bg">Kotlin</li>
             </ul>
           </div>
@@ -270,7 +280,7 @@
 
     <section id="about" class="sec">
       <div class="wrap grid items-start gap-8 md:grid-cols-[.8fr_1.2fr] md:gap-14">
-        <img src="docs/chaiwan.jpg" alt="รูปของ Lek Chaiwan" width="600" height="600" loading="lazy"
+        <img src="docs/Image/chaiwan.jpg" alt="รูปของ Lek Chaiwan" width="600" height="600" loading="lazy"
           class="rv aspect-square w-full max-w-[220px] rounded-[20px] bg-lilac object-cover transition-all duration-500 hover:-rotate-[5deg] hover:scale-105 hover:rounded-full md:max-w-none">
 
         <div>
@@ -282,7 +292,7 @@
           <div class="rv my-2 flex flex-wrap gap-9">
             <div><b class="block font-display text-[2.6rem] leading-[1.1] text-blue" data-n="4">0</b><span
                 class="text-[.92rem] text-mute">โปรเจกต์ที่ทำเสร็จ</span></div>
-            <div><b class="block font-display text-[2.6rem] leading-[1.1] text-blue" data-n="22"
+            <div><b class="block font-display text-[2.6rem] leading-[1.1] text-blue" data-n="20"
                 data-plus="1">0</b><span class="text-[.92rem] text-mute">เทคโนโลยีที่ใช้เป็น</span></div>
             <div><b class="block font-display text-[2.6rem] leading-[1.1] text-blue" data-n="3">0</b><span
                 class="text-[.92rem] text-mute">แพลตฟอร์ม: เว็บ มือถือ เซิร์ฟเวอร์</span></div>
@@ -293,21 +303,34 @@
               <b class="block font-display font-medium">2023 – ปัจจุบัน · มหาวิทยาลัยมหาสารคาม</b><span
                 class="text-[.95rem] text-mute">คณะวิทยาการสารสนเทศ สาขาวิทยาการคอมพิวเตอร์ · เกรดเฉลี่ย 2.83</span>
             </li>
-            <li
-              class="rv relative pb-[22px] before:absolute before:-left-[29px] before:top-[9px] before:h-[11px] before:w-[11px] before:rounded-full before:bg-blue before:content-['']">
-              <b class="block font-display font-medium">2025 · [ชื่อกิจกรรม / ค่าย / Hackathon]</b><span
-                class="text-[.95rem] text-mute">สิ่งที่ทำและสิ่งที่ได้เรียนรู้ [แก้เป็นของจริง]</span>
-            </li>
-            <li
-              class="rv relative pb-[22px] before:absolute before:-left-[29px] before:top-[9px] before:h-[11px] before:w-[11px] before:rounded-full before:bg-blue before:content-['']">
-              <b class="block font-display font-medium">2024 · [ชื่อคอร์ส / ใบรับรอง]</b><span
-                class="text-[.95rem] text-mute">เรียนจาก [แหล่งเรียน] [แก้เป็นของจริง]</span>
-            </li>
+            <li </li>
           </ul>
         </div>
       </div>
     </section>
+    <section id="certs" class="sec">
+      <div class="wrap">
+        <h2 class="h2 rv">ใบรับรองและประกาศนียบัตร</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
+          <article
+            class="rv overflow-hidden rounded-2xl border border-line bg-card transition hover:-translate-y-1 hover:border-blue">
+            <img src="docs/Image/certi/Certificate_CERT-2026-JSKPPC.png" alt="ใบรับรอง [ชื่อใบรับรอง]" loading="lazy"
+              class="aspect-[4/3] w-full object-cover object-top">
+            <div class="p-5">
+              <h3 class="text-[1.05rem] font-medium">NCSA CTF Thailand Tournament </h3>
+              <p class="text-[.93rem] text-mute">Thailand Cyber Top Talent 2026 (Senior)· 2569]</p>
+              <a class="link mt-3 inline-block font-medium text-blue"
+                href="https://primeevent.online/verify-cert/CERT-2026-JSKPPC" target="Certification_NCSACTF"
+                rel="noopener">ดูใบรับรอง</a>
+            </div>
+          </article>
+
+
+
+        </div>
+      </div>
+    </section>
     <section id="roles" class="sec">
       <div class="wrap">
         <h2 class="h2 rv">ตำแหน่งที่สนใจ</h2>
