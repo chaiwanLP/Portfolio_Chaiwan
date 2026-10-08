@@ -163,25 +163,34 @@
             class="group/s grid cursor-pointer list-none grid-cols-[1fr_24px] items-center gap-4 py-6 after:font-display after:text-[1.6rem] after:text-blue after:transition-transform after:content-['+'] group-open/d:after:rotate-45 md:grid-cols-[1fr_230px_70px_24px] [&::-webkit-details-marker]:hidden">
             <h3
               class="text-[clamp(1.3rem,3vw,2rem)] font-bold transition group-hover/s:translate-x-2.5 group-hover/s:text-blue">
-              Task API</h3>
-            <span class="hidden text-[.95rem] text-mute md:block">Backend · โปรเจกต์รายวิชา</span>
-            <span class="hidden text-[.95rem] text-mute md:block">2025</span>
+              Todo-List Application — Flowday</h3>
+            <span class="hidden text-[.95rem] text-mute md:block">เว็บแอป · โปรเจกต์ส่วนตัว</span>
+            <span class="hidden text-[.95rem] text-mute md:block">2026</span>
           </summary>
           <div class="grid gap-8 pb-10 pt-1 md:grid-cols-[1.1fr_1fr] md:gap-9">
             <div>
-              <p class="mb-4 text-mute">REST API จัดการรายการงาน พร้อมระบบล็อกอินและเอกสารทดสอบด้วย Postman รันบน Docker
-                [แก้คำอธิบายเป็นของจริง]</p>
-              <ul class="flex flex-wrap gap-2">
-                <li class="chip">Express.js</li>
-                <li class="chip">MongoDB</li>
-                <li class="chip">Docker</li>
+              <p class="mb-4 text-mute">Todo app แบบ full-stack: เพิ่ม / หมวดหมู่ / กำหนดวัน-เวลา / สถานะ
+                ต้องทำ→กำลังทำ→เสร็จ / เตือนเกินเวลา + ใกล้ถึงกำหนด ข้อมูลซิงก์ REST API เก็บใน PostgreSQL
+                รีเฟรชแล้วไม่หาย</p>
+              <ul class="mb-3 flex flex-wrap gap-2">
+                <li class="chip">Angular 22</li>
+                <li class="chip">TypeScript</li>
+                <li class="chip">Tailwind CSS v4</li>
+                <li class="chip">Standalone + Signals</li>
+                <li class="chip">FormsModule</li>
+                <li class="chip">Node.js 24</li>
+                <li class="chip">Express 4</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">pg</li>
+                <li class="chip">REST API</li>
               </ul>
               <a class="link mt-[18px] inline-block font-medium text-blue" href="#">ดูโค้ดบน GitHub</a>
             </div>
             <div
-              class="grid aspect-[16/10] grid-rows-[14px_1fr] gap-2.5 rounded-[14px] border border-line bg-card p-3.5 transition-transform duration-500 hover:rotate-[1.5deg] hover:scale-[1.03] group-open/d:animate-pop">
+              class="grid aspect-[16/10] grid-rows-[14px_1fr] gap-2.5 overflow-hidden rounded-[14px] border border-line bg-card p-3.5 transition-transform duration-500 hover:rotate-[1.5deg] hover:scale-[1.03] group-open/d:animate-pop">
               <i class="block h-2 w-[60px] rounded-full bg-line"></i>
-              <div class="rounded-lg bg-gradient-to-br from-[#14b88a] to-[#9be7cf]"></div>
+              <img src="docs/Image/Todo.png" alt="หน้าจอ Todo-List Application Flowday" loading="lazy"
+                class="h-full min-h-0 w-full rounded-lg object-cover object-top">
             </div>
           </div>
         </details>
