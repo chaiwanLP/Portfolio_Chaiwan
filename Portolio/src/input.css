@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 238 240 244; --ink: 19 21 26; --mute: 93 100 114; --line: 207 212 222;
+    --blue: 47 75 255; --lilac: 218 223 255; --card: 255 255 255;
+    interpolate-size: allow-keywords;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: 16 18 24; --ink: 238 240 246; --mute: 154 162 179; --line: 42 47 59;
+      --blue: 125 144 255; --lilac: 32 37 74; --card: 23 26 34;
+    }
+  }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body { @apply bg-bg font-sans text-[17px] font-light leading-[1.8] text-ink; }
+  h1, h2, h3 { @apply font-display leading-tight; }
+  :focus-visible { @apply outline outline-[3px] outline-offset-[3px] outline-blue; }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-[1040px] px-6; }
+  .sec { @apply border-t border-line py-[76px]; }
+  .h2 { @apply mb-[34px] text-[clamp(1.7rem,3.6vw,2.4rem)] font-bold; }
+  .btn { @apply inline-block rounded-[10px] bg-blue px-7 py-[13px] font-display font-medium text-bg transition-transform hover:-translate-y-0.5; }
+  .btn-line { @apply border-[1.5px] border-ink bg-transparent text-ink; }
+  .chip { @apply rounded-full bg-lilac px-3.5 py-0.5 text-[.9rem] font-normal text-blue; }
+
+  /* underline that draws in on hover */
+  .link {
+    background: linear-gradient(rgb(var(--blue)), rgb(var(--blue))) 0 100% / 0 2px no-repeat;
+    transition: background-size .3s;
+  }
+  .link:hover { background-size: 100% 2px; }
+
+  /* hero keyword underline, drawn once on load */
+  .u {
+    background: linear-gradient(rgb(var(--blue)), rgb(var(--blue))) 0 100% / 0 .08em no-repeat;
+    animation: ul 1s .9s ease-out forwards;
+  }
+
+  /* email link fills with colour on hover */
+  .mailfx {
+    background: linear-gradient(rgb(var(--blue)), rgb(var(--blue))) 0 100% / 0 100% no-repeat;
+    transition: background-size .35s, color .35s;
+  }
+  .mailfx:hover { background-size: 100% 100%; @apply text-bg; }
+
+  /* smooth open/close for <details> */
+  details::details-content {
+    block-size: 0; overflow: clip;
+    transition: block-size .45s ease, content-visibility .45s allow-discrete;
+  }
+  details[open]::details-content { block-size: auto; }
+
+  /* scroll reveal (class "js" is added by main.js) */
+  .js .rv { opacity: 0; }
+  .js .rv.in { animation: reveal .7s var(--d, 0s) cubic-bezier(.2,.8,.2,1) both; }
+}
+
+@keyframes ul { to { background-size: 100% .08em; } }
+@keyframes reveal { from { opacity: 0; translate: 0 28px; } to { opacity: 1; translate: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .rv { opacity: 1; }
+  .u { background-size: 100% .08em; }
+}
