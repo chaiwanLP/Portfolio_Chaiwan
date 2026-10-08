@@ -1,8 +1,14 @@
-# Nova — Internship Portfolio
+# Chaiwan Wisedrat — Internship Portfolio
 
-Portfolio สำหรับสมัครฝึกงาน ทำด้วย HTML, Tailwind CSS และ JavaScript
+Portfolio สำหรับสมัครฝึกงาน (Full-Stack & Mobile) ทำด้วย HTML, Tailwind CSS และ JavaScript
 
-🔗 เว็บไซต์: https://ชื่อผู้ใช้.github.io/ชื่อ-repo/
+🔗 เว็บไซต์: https://chaiwanlp.github.io/Portfolio_Chaiwan/
+
+## โปรเจกต์ในเว็บ
+- **Easy Pencil** — Java, LWJGL, OpenGL
+- **LexiLoops** — React 19, Vite 7, Tailwind CSS 4, tRPC 11, Drizzle ORM, Postgres (Supabase)
+- **Todo-List Application — Flowday** — Angular 22, Tailwind CSS v4, Node.js 24, Express 4, PostgreSQL
+- **WebCoinGame** — Angular, Firebase, TailwindCSS
 
 ## โครงสร้าง
 ```
@@ -20,10 +26,14 @@ npm run dev     # ดูการแก้ไขแบบ watch
 npm run build   # build CSS ก่อน commit ทุกครั้ง
 ```
 
-## ขึ้น GitHub Pages
-1. Push โค้ดทั้งหมดขึ้น repo (Public)
-2. Settings → Pages → Deploy from a branch → `main` / `(root)`
-3. รอ 1–2 นาที
+## ขึ้น GitHub Pages (GitHub Actions)
+เว็บจริงอยู่ในโฟลเดอร์ `Portolio/` (repo root ไม่มี `index.html`) เลย deploy ด้วย Actions แทนแบบ branch
+
+1. Push ขึ้น `main`
+2. Settings → Pages → Source → `GitHub Actions`
+3. Workflow `.github/workflows/pages.yml` จะ `npm ci + npm run build` แล้วอัปโหลด `Portolio/` ขึ้น Pages
+4. รอ 1–2 นาที แล้วเข้า https://chaiwanlp.github.io/Portfolio_Chaiwan/
 
 ## ติดต่อ
-[อีเมล] · [LinkedIn] · [GitHub]
+- GitHub: https://github.com/chaiwanLP
+- Resume: `docs/Chaiwan_Wisedrat_Resume.pdf`
