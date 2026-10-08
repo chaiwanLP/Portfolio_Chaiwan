@@ -1,0 +1,12 @@
+{
+  "name": "nova-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
