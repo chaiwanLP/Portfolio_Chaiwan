@@ -790,6 +790,10 @@ details[open]::details-content {
   margin-bottom: 0.25rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -820,10 +824,6 @@ details[open]::details-content {
 
 .mt-\[18px\] {
   margin-top: 18px;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -1171,30 +1171,6 @@ details[open]::details-content {
 .bg-line {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--line) / var(--tw-bg-opacity, 1));
-}
-
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.from-\[\#14b88a\] {
-  --tw-gradient-from: #14b88a var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(20 184 138 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#ff7a59\] {
-  --tw-gradient-from: #ff7a59 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 122 89 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-\[\#9be7cf\] {
-  --tw-gradient-to: #9be7cf var(--tw-gradient-to-position);
-}
-
-.to-\[\#ffc2a8\] {
-  --tw-gradient-to: #ffc2a8 var(--tw-gradient-to-position);
 }
 
 .object-cover {
